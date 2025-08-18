@@ -99,3 +99,91 @@ body {
 .menu-icon {
   fill: #173a56;
 }
+
+/* hero */
+
+.hero-secion {
+  padding: 29px 0 100px 0;
+}
+
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  margin: 11px 0 16px 0;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.56;
+  width: 326px;
+  margin-bottom: 20px;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.get-started-btn {
+  min-width: 142px;
+  height: 53px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #02897a;
+  color: #fff;
+  font-weight: 700;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.get-started-btn:hover,
+.get-started-btn:focus {
+  background-color: #054840;
+}
+
+.watch-the-video-btn {
+  min-width: 165px;
+  height: 23px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-weight: 600;
+  text-decoration: underline;
+  color: #02897a;
+  background-color: #fff;
+  border: none;
+
+  transition: color 250ms ease-in-out;
+}
+
+.watch-the-video-icon {
+  fill: #02897a;
+
+  transition: fill 250ms ease-in-out;
+}
+
+.watch-the-video-btn:hover,
+.watch-the-video-btn:focus {
+  color: #054840;
+}
+
+.watch-the-video-btn:hover .watch-the-video-icon,
+.watch-the-video-btn:focus .watch-the-video-icon {
+  fill: #054840;
+}
