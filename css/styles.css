@@ -102,7 +102,7 @@ body {
 
 /* hero */
 
-.hero-secion {
+.hero-section {
   padding: 29px 0 100px 0;
 }
 
@@ -133,26 +133,28 @@ body {
   gap: 28px;
 }
 
+.btn {
+  border-radius: 4px;
+  height: 53px;
+  border: none;
+  background-color: #02897a;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #054840;
+}
+
 .get-started-btn {
   min-width: 142px;
-  height: 53px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: none;
-  border-radius: 4px;
-  background-color: #02897a;
-  color: #fff;
-  font-weight: 700;
-
   transition: background-color 250ms ease-in-out;
-}
-
-.get-started-btn:hover,
-.get-started-btn:focus {
-  background-color: #054840;
 }
 
 .watch-the-video-btn {
@@ -186,4 +188,93 @@ body {
 .watch-the-video-btn:hover .watch-the-video-icon,
 .watch-the-video-btn:focus .watch-the-video-icon {
   fill: #054840;
+}
+
+/* benefits section */
+
+.benefits-section {
+  padding-bottom: 100px;
+}
+
+.benefits-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-title {
+  font-size: 32px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  margin-bottom: 32px;
+}
+
+.benefits-item {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-icon-bg {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.benefits-item:nth-child(1) .benefits-icon-bg {
+  background-color: #02897a;
+}
+
+.benefits-item:nth-child(2) .benefits-icon-bg {
+  background-color: #4d8dff;
+}
+
+.benefits-item:nth-child(3) .benefits-icon-bg {
+  background-color: #740a76;
+}
+
+.benefits-item:nth-child(4) .benefits-icon-bg {
+  background-color: #f03e3d;
+}
+
+.benefits-icon {
+  fill: #fff;
+}
+
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 22px;
+
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+  line-height: 1.63;
+  text-align: center;
+
+  width: 240px;
+}
+
+.benefits-btn {
+  min-width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms ease-in-out;
 }
