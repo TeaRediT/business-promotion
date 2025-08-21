@@ -15,6 +15,7 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -103,7 +104,7 @@ body {
 /* hero */
 
 .hero-section {
-  padding: 29px 0 100px 0;
+  margin: 29px 0 100px 0;
 }
 
 .hero-items {
@@ -140,6 +141,8 @@ body {
   background-color: #02897a;
   color: #fff;
   font-weight: 700;
+
+  transition: background-color 250ms ease-in-out;
 }
 
 .btn:hover,
@@ -153,8 +156,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: background-color 250ms ease-in-out;
 }
 
 .watch-the-video-btn {
@@ -193,7 +194,7 @@ body {
 /* benefits section */
 
 .benefits-section {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .benefits-items {
@@ -282,7 +283,7 @@ body {
 /* use cases section */
 
 .cases-section {
-  padding-bottom: 141px;
+  margin-bottom: 141px;
 }
 .cases-section-container {
   padding: 0 31px;
@@ -296,9 +297,6 @@ body {
 
 .cases-img {
   margin-bottom: 50px;
-}
-
-.cases-item {
 }
 
 .cases-title {
@@ -324,9 +322,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.managment-item {
 }
 
 .cases-subtitle {
@@ -375,8 +370,54 @@ body {
   fill: #fff;
 }
 
-.collaborative-list {
+/* quick n easy process */
+
+.process-section {
+  margin-bottom: 100px;
 }
 
-.collaborative-item {
+.process-container {
+  padding: 0 31px;
+}
+
+.process-title {
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+.process-text {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+
+  margin: 8px 0 40px 0;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.process-item:nth-child(2),
+.process-item:last-child {
+  flex-direction: row-reverse;
+}
+
+.process-item-text {
+  text-align: center;
+  width: 197px;
+  font-weight: 500;
+}
+
+.process-btn {
+  margin: 0 auto;
+  width: 216px;
 }
