@@ -421,3 +421,63 @@ body {
   margin: 0 auto;
   width: 216px;
 }
+
+/* strategy section */
+
+.strategy-container {
+  padding: 0 31px;
+}
+
+.strategy-title {
+  font-size: 34px;
+
+  margin-bottom: 8px;
+}
+
+.strategy-text {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.strategy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.strategy-item {
+}
+
+.strategy-item-text {
+  margin: 24px 0 12px 0;
+  line-height: 1.75;
+}
+
+.strategy-author-link {
+  display: inline;
+  font-weight: 700;
+  color: inherit;
+}
+
+.strategy-author-link:hover,
+.strategy-author-link:focus {
+  text-decoration: underline;
+}
+
+.strategy-item-link {
+  color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  max-width: 294px;
+
+  transition: color 250ms ease-in-out;
+}
+
+.strategy-item-link:hover,
+.strategy-item-link:focus {
+  color: #02897a;
+}
