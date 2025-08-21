@@ -445,10 +445,7 @@ body {
 .strategy-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.strategy-item {
+  gap: 56px;
 }
 
 .strategy-item-text {
@@ -480,4 +477,149 @@ body {
 .strategy-item-link:hover,
 .strategy-item-link:focus {
   color: #02897a;
+}
+
+/* price section */
+
+.price-section {
+  margin-top: 98px;
+}
+
+.price-container {
+  padding: 0 44px;
+}
+
+.price-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.price-text {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.price-item {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  padding: 24px 0 32px 0;
+  max-width: 323px;
+  border-radius: 8px;
+}
+
+.price-item-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.67;
+
+  margin-bottom: 8px;
+}
+
+.price-item-text {
+  line-height: 2.5;
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.price-value {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  color: #02897a;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price-sup {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #02897a;
+}
+
+.price-sub {
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+
+.price-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+
+.price-benefits-item {
+}
+
+.price-benefits-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 139px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* second child */
+
+.price-item:nth-child(2) {
+  background-color: #02897a;
+}
+
+.price-item:nth-child(2) .price-item-title,
+.price-item:nth-child(2) .price-item-text,
+.price-item:nth-child(2) .price-value,
+.price-item:nth-child(2) .price-sup,
+.price-item:nth-child(2) .price-benefits-text {
+  color: #fff;
+}
+
+.price-item:nth-child(2) .order-btn {
+  background-color: #fff;
+  color: #02897a;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.price-item:nth-child(2) .order-btn:hover,
+.price-item:nth-child(2) .order-btn:focus {
+  background-color: #e3e3e3;
 }
