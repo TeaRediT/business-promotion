@@ -282,38 +282,101 @@ body {
 /* use cases section */
 
 .cases-section {
+  padding-bottom: 141px;
 }
-.container {
+.cases-section-container {
+  padding: 0 31px;
 }
-.visually-hidden {
-}
+
 .cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
+
+.cases-img {
+  margin-bottom: 50px;
+}
+
 .cases-item {
 }
-.cases-img {
-}
+
 .cases-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
+
 .cases-title-span {
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 8px;
 }
+
 .cases-text {
+  line-height: 1.63;
 }
-.managment-list {
+
+.managment-list,
+.collaborative-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
 .managment-item {
 }
+
 .cases-subtitle {
+  font-weight: 600;
+  line-height: 1.63;
+  margin-bottom: 12px;
 }
+
 .support-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
 .support-item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
+
 .tick-icon-bg {
+  width: 35px;
+  height: 35px;
+  border-radius: 14px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.support-item:first-child .tick-icon-bg {
+  background-color: #f90;
+}
+
+.support-item:nth-child(2) .tick-icon-bg {
+  background-color: #f03e3d;
+}
+
+.support-item:last-child .tick-icon-bg {
+  background-color: #4d8dff;
+}
+
 .tick-icon {
+  fill: #fff;
 }
+
 .collaborative-list {
 }
+
 .collaborative-item {
 }
