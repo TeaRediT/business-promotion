@@ -21,6 +21,7 @@ img {
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 input {
@@ -68,7 +69,6 @@ body {
 /* header */
 
 .header {
-  padding: 17px 0;
   box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -79,10 +79,12 @@ body {
   padding-right: 27px;
 }
 
-.logo-title a {
+.header-title {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  padding: 17px 0;
 }
 
 .header-title {
@@ -90,6 +92,10 @@ body {
   font-size: 30px;
   line-height: 0.93;
   color: #173a56;
+}
+
+.header-desktop {
+  display: none;
 }
 
 .menu-button {
@@ -453,7 +459,6 @@ body {
 .strategy-author-link {
   display: inline;
   font-weight: 700;
-  color: inherit;
 }
 
 .strategy-author-link:hover,
@@ -462,7 +467,6 @@ body {
 }
 
 .strategy-item-link {
-  color: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.67;
@@ -617,7 +621,9 @@ body {
 .price-item:nth-child(2) .order-btn:hover,
 .price-item:nth-child(2) .order-btn:focus,
 .cta-btn:hover,
-.cta-btn:focus {
+.cta-btn:focus,
+.header-btns-item:first-child .header-btn:focus,
+.header-btns-item:first-child .header-btn:hover {
   background-color: #e3e3e3;
 }
 
@@ -826,7 +832,6 @@ body {
 .resource-link,
 .stuff-link {
   line-height: 2.19;
-  color: #22343d;
 
   transition: font-weight 250ms ease-in-out;
 }
@@ -866,4 +871,68 @@ body {
 
 .footer-allrights {
   line-height: 1.88;
+}
+
+/* desktop */
+
+@media screen and (min-width: 1150px) {
+  .container {
+    max-width: 1150px;
+    padding: 0 20px;
+  }
+
+  /* header */
+
+  .header {
+    box-shadow: none;
+  }
+
+  .header-title {
+    padding: 22px 0;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .header-desktop {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-nav-link {
+    padding: 26px 0;
+    line-height: 1.75;
+  }
+
+  .current {
+    font-weight: 600;
+  }
+
+  .header-btns {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+  }
+
+  .header-btn {
+    min-width: 113px;
+    height: 42px;
+    font-weight: 600;
+  }
+
+  .header-btns-item:first-child .header-btn {
+    min-width: 105px;
+    background-color: #fff;
+    border: 1px solid #bcd0e5;
+    color: #173a56;
+
+    transition: background-color 250ms ease-in-out;
+  }
 }
