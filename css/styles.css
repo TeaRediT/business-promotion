@@ -110,10 +110,11 @@ body {
 /* hero */
 
 .hero-section {
-  margin: 29px 0 100px 0;
+  padding: 29px 0 100px 0;
 }
 
-.hero-items {
+.hero-items,
+.hero-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,7 +201,7 @@ body {
 /* benefits section */
 
 .benefits-section {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .benefits-items {
@@ -286,7 +287,7 @@ body {
 /* use cases section */
 
 .cases-section {
-  margin-bottom: 141px;
+  padding-bottom: 141px;
 }
 .cases-section-container {
   padding: 0 31px;
@@ -376,7 +377,7 @@ body {
 /* quick n easy process */
 
 .process-section {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .process-container {
@@ -483,7 +484,7 @@ body {
 /* price section */
 
 .price-section {
-  margin-top: 98px;
+  padding-top: 98px;
 }
 
 .price-container {
@@ -574,9 +575,6 @@ body {
   margin-bottom: 38px;
 }
 
-.price-benefits-item {
-}
-
 .price-benefits-text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -630,7 +628,7 @@ body {
 /* comments section */
 
 .comments-sections {
-  margin: 100px 0;
+  padding: 100px 0;
 }
 
 .comments-container {
@@ -719,7 +717,7 @@ body {
 /* cta section */
 
 .cta-section {
-  margin-bottom: 100px;
+  padding: 100px;
 }
 
 .cta-items {
@@ -934,5 +932,51 @@ body {
     color: #173a56;
 
     transition: background-color 250ms ease-in-out;
+  }
+
+  /* hero */
+
+  .hero-section {
+    padding: 25px 0 100px 0;
+  }
+
+  .hero-items {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hero-thumb {
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    text-align: start;
+    font-size: 40px;
+    line-height: 1.5;
+    width: 420px;
+
+    margin: 0 0 16px 0;
+  }
+
+  .hero-text {
+    text-align: start;
+    width: 459px;
+
+    margin-bottom: 45px;
+  }
+
+  .hero-btns {
+    gap: 30px;
+  }
+
+  .get-started-btn {
+    min-width: 178px;
+  }
+
+  .btn {
+  }
+  .watch-the-video-btn {
+  }
+  .watch-the-video-icon {
   }
 }

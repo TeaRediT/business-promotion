@@ -73,26 +73,32 @@
     <!-- hero -->
     <section class="hero-section">
       <div class="container hero-items">
-        <img
-          src="./img/hero/amico.svg"
-          alt="hero icon"
-          width="338"
-          height="311"
-        />
-        <h1 class="hero-title">Work at the speed of thought</h1>
-        <p class="hero-text">
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul class="hero-btns">
-          <button class="get-started-btn btn" type="button">Get started</button>
-          <button class="watch-the-video-btn" type="button">
-            <svg class="watch-the-video-icon" width="20" height="17">
-              <use href="./img/symbol-defs.svg#icon-triangle-btn"></use>
-            </svg>
-            Watch the Video
-          </button>
-        </ul>
+        <picture>
+          <source
+            media="(min-width: 1150px)"
+            srcset="./img/hero/desktop/hero-img.svg"
+          />
+          <source media="(min-width: 411px)" srcset="./img/hero/hero-img.svg" />
+          <img src="./img/hero/hero-img.svg" alt="hero img" />
+        </picture>
+        <div class="hero-thumb">
+          <h1 class="hero-title">Work at the speed of thought</h1>
+          <p class="hero-text">
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+          <ul class="hero-btns">
+            <button class="get-started-btn btn" type="button">
+              Get started
+            </button>
+            <button class="watch-the-video-btn" type="button">
+              <svg class="watch-the-video-icon" width="20" height="17">
+                <use href="./img/symbol-defs.svg#icon-triangle-btn"></use>
+              </svg>
+              Watch the Video
+            </button>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- benefits -->
@@ -285,7 +291,7 @@
           <li class="process-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/quick-n-easy-process/Avatar-1.png    1x,
                   ./img/quick-n-easy-process/Avatar-1@2x.png 2x
@@ -298,7 +304,7 @@
           <li class="process-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/quick-n-easy-process/Avatar-2.png    1x,
                   ./img/quick-n-easy-process/Avatar-2@2x.png 2x
@@ -311,7 +317,7 @@
           <li class="process-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/quick-n-easy-process/Avatar-3.png    1x,
                   ./img/quick-n-easy-process/Avatar-3@2x.png 2x
@@ -324,7 +330,7 @@
           <li class="process-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/quick-n-easy-process/Avatar-4.png    1x,
                   ./img/quick-n-easy-process/Avatar-4@2x.png 2x
@@ -352,7 +358,7 @@
           <li class="strategy-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/strategy-section/image-1.jpg    1x,
                   ./img/strategy-section/image-1@2x.jpg 2x
@@ -374,7 +380,7 @@
           <li class="strategy-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/strategy-section/image-2.jpg    1x,
                   ./img/strategy-section/image-2@2x.jpg 2x
@@ -396,7 +402,7 @@
           <li class="strategy-item">
             <picture>
               <source
-                media="(max-width: 767px)"
+                media="(min-width: 411px)"
                 srcset="
                   ./img/strategy-section/image-3.jpg    1x,
                   ./img/strategy-section/image-3@2x.jpg 2x
@@ -526,7 +532,7 @@
             <div class="member-info">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 411px)"
                   srcset="
                     ./img/comments/avatar-1.png    1x,
                     ./img/comments/avatar-1@2x.png 2x
@@ -562,7 +568,7 @@
             <div class="member-info">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 411px)"
                   srcset="
                     ./img/comments/avatar-2.png    1x,
                     ./img/comments/avatar-2@2x.png 2x
@@ -598,7 +604,7 @@
             <div class="member-info">
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 411px)"
                   srcset="
                     ./img/comments/avatar-3.png    1x,
                     ./img/comments/avatar-3@2x.png 2x
@@ -615,6 +621,7 @@
         </ul>
       </div>
     </section>
+    <!-- cta -->
     <section class="cta-section">
       <div class="container">
         <div class="cta-items">
@@ -627,6 +634,7 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-items">
